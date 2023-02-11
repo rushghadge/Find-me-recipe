@@ -1,0 +1,22 @@
+<div class="func3" id="func3">
+  <div class="left">
+  </div>
+
+  <div class="right">
+    <h3 id="searchimage">Search Recipe by Image (BETA)</h3>
+    <form action="/search-image" method="POST" enctype="multipart/form-data">
+      <div class="form-input">
+        <input type="file" id="image" name="image">
+      </div>
+      {% if error_image %}
+      <p style="color:red;">{{error_image}}</p>
+    {% endif %}
+  
+      <div class="submit-button">
+        <button id="uploadrecipe" type="submit" class="btn btn-primary">Find me Recipe!</button>
+      </div>
+    </form>
+
+  </div>
+
+</div>

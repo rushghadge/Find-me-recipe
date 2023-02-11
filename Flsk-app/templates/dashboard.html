@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <form action="/search" method="POST">
+        <div class="form-group">
+          <label for="input">Food Item:</label>
+          <input type="text" name="input" class="form-control" id="input" placeholder="input">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+    {% if data %}
+    <div class="output">
+        <h2> {{ data.Item.fooditemname }} </h2>
+        <p> <b>Ingredients</b>: {{ data.Item.ingredients }} </p>
+        <p> <b>Cooking Instructions</b>: {{data.Item.instructions}} </p>
+    </div>
+    {% endif %}
+    
+
+      {% if error %}
+      <p style="color:red;"> {{ error }} </p>
+      {% endif %}
+
+{% endblock body %}

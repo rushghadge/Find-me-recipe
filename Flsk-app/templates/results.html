@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Recipes</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+          </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                  <button class="dropbtn">Search a Recipe<i class="arrow down"></i></button>
+                  <div class="dropdown-content">
+                    <a href="/#searchname">By name</a>
+                    <a href="/#searchingredient">By Ingredients</a>
+                    <a href="/#searchingred">By Image</a>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#uploadrecipe">Submit your own recipe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="master-div"> 
+      <div class="heading">
+      </div>
+<div class="recipie-master">
+    <div class="List-container" style="margin: 1%;padding: 1%;">
+        {% if data|length==0 %}
+        <div class="alert alert-dark" role="alert">
+        No Recepie found!
+        </div>
+        
+        {% else %}
+        <div>
+        <h2 style="text-align:center;">Found The Following Recepies</h2>
+        <div class="ml-list">
+          {% if names|length > 0 %}
+          <h4> Identified as the following: {{names}}</h4>  
+          {% endif %}
+          
+        </div>
+        </div>
+            <ol>
+                {% for item in data  %}
+                {% if item.fooditemname|length > 0 %}
+                <div class="recipie">
+                  <h3><li>{{ item.fooditemname }}</h3>              
+                      <p><b>Ingredients:</b> {{ item.ingredients}}</p>
+                      <p><b>Instructions:</b>{{ item.instructions }}</p> 
+  
+                      </li>
+              </div>
+                {% endif %}
+                {% endfor %}
+            </ol>
+            {% endif %}
+        </div>
+</div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

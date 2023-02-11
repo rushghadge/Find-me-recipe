@@ -1,0 +1,46 @@
+<div class="func-4" id="func-4">
+    <div class="right">
+
+        <h3 id="submitrecipe">Submit your own recipe</h3>
+      <form action="/submit-recipie" method="POST" id="submission-form">
+        <div class="label-master">
+            <div class="label">
+                <p><b>Name of the Dish*:</b></p>
+            </div>
+            <div class="form-input">
+            <input type="text" name="dish-name" class="form-control" id="dish-name" placeholder="Enter name of your Dish" required>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="label-master">
+            <div class="label">
+                <p><b>Ingredients required*:</b></p>
+            </div>
+            <div class="form-input">
+            <input type="textarea" required name="ingredients" class="form-control" id="ingredients" placeholder="Comma Seperated list of Ingredients">
+            </div>
+        </div>
+        <br><br><br>
+        <div class="label-master">
+            <div class="label">
+                <p><b>Enter the Steps to make*:</b></p>
+            </div>
+            <div class="form-input">
+            <!-- <input type="text" name="ingredients" class="form-control" id="ingredients" placeholder="Comma Seperated list of Ingredients"> -->
+
+            <textarea name="steps" id="steps" form="submission-form" placeholder="Enter your recipe steps here..."></textarea required>
+            </div>
+        </div>
+
+        <div class="submit-button-your">
+          <button type="submit" class="btn btn-primary" id="ingredients">Submit your recipe</button>
+        </div>
+      </form>
+
+    </div>
+  
+    <div class="left">
+      
+    
+    </div>
+  </div>

@@ -1,0 +1,363 @@
+
+/***** NAVBAR SETTINGS *****/
+nav.navbar {
+    background-color: #262626 !important;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height:4em;
+}
+
+nav.navbar a, nav.navbar input {
+    /*background-color: white;*/
+    /*border-radius: 32%;*/
+    padding-top: 5%;
+    height: 4em;
+    text-transform: uppercase;
+    width: 12em;
+    text-align: center;
+    color: #dce8da;
+    font-weight: bold;
+    width: 15em;
+}
+
+nav.navbar a:hover, nav.navbar input:hover{
+    background-color: rgba(255, 254, 254, 0.74);
+    color: rgb(19, 19, 19);
+    font-weight: bolder;
+}
+
+nav.navbar li {
+    width: 15em;
+    text-align: center;
+}
+
+nav.navbar {
+    background-color: #222424;
+}
+
+nav.navbar div.container-fluid {
+    padding-left: 29%;
+    padding-right: 25%;
+}
+/*NAVBAR SETTINGS END*/
+
+/*** FUNCTIONALITY-1 SETTINGS ****/
+div.func1 {
+    width: 100%;
+    background-color: #88b2aebf;
+}
+
+div.func1 div.left {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    background-image: url("../images/search-side.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+}
+
+div.func1 div.right {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    height: 30em;
+    background-color: darkgrey;
+    padding-top: 6%;
+}
+
+div.func1 div.right h3 {
+    text-align: center;
+}
+div.func1 div.right form {
+    padding: 5%;
+}
+
+
+div.func1 div.right div.submit-button {
+    text-align: center;
+    padding-top: 3%;
+}
+
+/*FUNCTIONALITY-1 SETTINGS END*/
+
+/*WELCOME SCREEN IMAGE SETTINGS*/
+div.welcome-heading {
+    background-image: url("../images/home-intro.jpg");
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 5em;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding-bottom: 5em;
+      }
+     
+     div.welcome-heading span {
+        background: #f0f8ffc9;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 1%;
+        margin-top: 21%;
+    }
+
+    div.down-arrow img{
+        width: 3%;
+    
+    }    
+
+    /*WELCOME SCREEN SETTINGS END*/
+
+    /*FUNCTIONALITY-2 SETTINGS*/
+    div.func2 {
+        width: 100%;
+        background-color: #88b2aebf;
+    }
+    
+    div.func2 div.left {
+        width: 50%;
+        float: left;
+        padding: 1%;
+        background-image: url("../images/ingredients-side.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 30em;
+        padding-top: 6%;
+    }
+    
+    div.func2 div.right {
+        width: 50%;
+        float: left;
+        padding: 1%;
+        height: 30em;
+        background-color: darkgrey;
+        padding-top: 6%;
+    }
+    
+    div.func2 div.right h3 {
+        text-align: center;
+    }
+    div.func2 div.right form {
+        padding: 5%;
+    }
+    
+    
+    div.func2 div.right div.submit-button {
+        text-align: center;
+        padding-top: 3%;
+    }
+    /*FUNCTIONALITY-2 SETTINGS END*/
+
+    /*FOOTER SETTINGS*/
+    footer {
+        background-color:#353434 ;
+        padding-left: 30%;
+        padding-right: 30%;
+        color:white
+    }
+    /*FOOTER SETTINGS END*/
+
+    /*RECIPIE DIV*/
+    div.recipie-master {
+        min-height: 61em;
+        background-image:url("../images/recipie-background.jpg");
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    div.recipie-master ol {
+        background: white;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    div.recipie {
+        padding-top: 2%;  
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom:2%;
+    }
+    /**/
+
+    /*** FUNCTIONALITY-3 SETTINGS ****/
+div.func3 {
+    width: 100%;
+    background-color: #88b2aebf;
+}
+
+div.func3 div.left {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    background-image: url("../images/image-side.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+}
+
+div.func3 div.right {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    height: 30em;
+    background-color: darkgrey;
+    padding-top: 6%;
+}
+
+div.func3 div.right h3 {
+    text-align: center;
+}
+div.func3 div.right form {
+    padding: 5%;
+}
+
+
+div.func3 div.right div.submit-button {
+    text-align: center;
+    padding-top: 3%;
+}
+
+/*FUNCTIONALITY-3 SETTINGS END*/
+
+/*FUNCTIONALITY-4 SETTINGS*/
+div.func-4 {
+    width: 100%;
+    background-color: #88b2aebf;
+}
+
+div.func-4 div.left {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    background-image: url("../images/upload-side.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50em;
+}
+
+div.func-4 div.right {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    height: 50em;
+    background-color: darkgrey;
+}
+
+div.func-4 div.right h3 {
+    text-align: center;
+}
+div.func-4 div.right form {
+    padding: 5%;
+    padding-left: 14%;
+}
+
+
+div.func-4 div.right div.submit-button {
+    text-align: center;
+    padding-top: 3%;
+}
+
+div.func-4 div.label-master {
+    width:100%;
+}
+
+div.func-4 div.label-master div.label {
+    float: left;
+    width: 23%;
+  }
+
+  div.func-4 div.label-master div.form-input {
+    float: left;
+    width: 50%;
+  }
+
+  div.func-4 div.submit-button-your {
+    padding:20%;
+  }
+
+  div.func-4 div.label-master div.form-input textarea {
+    width:130%;
+  }
+/*FUNCTIONALITY-4 SETTINGS END*/
+
+/*ML*/
+div.ml-list {
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*Dropdown Menu*/
+.dropbtn {
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 4em;
+    width: 15em;
+    padding-top: 1%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid white;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropbtn:hover {
+    background-color: rgba(255, 254, 254, 0.74) !important;
+    color: rgb(19, 19, 19);
+    font-weight: bolder;
+  }
+
+  .dropdown-content a:hover {
+    background: transparent;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+}
+  
+  .dropdown:hover .dropbtn {
+    background: transparent;
+}
+/**/
+
+/**Drop Down Arrow**/
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 3%;
+    margin-bottom: 1%;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }

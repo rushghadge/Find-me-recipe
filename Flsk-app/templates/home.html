@@ -1,0 +1,28 @@
+ 
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="welcome-heading">
+  <span>
+    Find Me Recipe
+  </span>
+  <div class="down-arrow">
+    <a href = "#searchname"><img src="../static/images/down-arrow.png"> </a>
+  </div>
+  <div class="down-arrow">
+    <a id = "searchname" href = "#searchname"><img src="../static/images/down-arrow.png"> </a>
+  </div>
+</div>
+<a href="#" ></a>
+{%include 'search-by-name.html' %}
+
+{% include 'search-by-ingredients.html' %}
+
+{% include 'search-by-image.html' %}
+
+{% include 'upload-your-own-recipie.html'%}
+
+{%include 'footer.html'%}
+
+
+{% endblock body %}
